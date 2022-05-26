@@ -194,3 +194,38 @@ nav:nth-of-type(5){
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       text-align: center;
   }
+
+#slider{
+    margin:auto;
+    width:800px;
+    height:450px;
+    margin-top:100px;
+}
+#slider a{
+    position:absolute;
+}
+
+#slider a img{
+    padding:10px;
+    border:1px solid #ccc;
+    background:#fff;
+    width:800px;
+    height:450px;
+}
+#slider a:nth-of-type(1){
+    animation-name:fader;
+    animation-delay:4s;
+    animation-duration:1s;
+    z-index:20;
+}
+
+#slider a:nth-of-type(2){
+    z-index:10;
+}
+#slider a:nth-of-type(n+3) {
+    display:none;
+}
+@keyframes fader{
+    from{opacity:1.0;}
+    to{opacity:0.0};
+}
