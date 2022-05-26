@@ -77,32 +77,29 @@ Last but not least we needed to create a 2D character sprite animation in <a hre
         
     </div>
     <br>
+        <br>
+        <br>
      <h2>Development</h2>
-     <br>
     <div>
         
         <h5>Blender</h5>
-        
-        <p>
-            
-        
-                    <br> <br>
+        <p> 
+             
 
        First before creating our video, the subject had to be modelled in blender.
         The Bowl was not a hard task, first a circle is added then using upward extrusions a pillar is created. Outward extrusions allow us to create a lamp shape,
         then sections of the bowl are selected and brought out to form a proper bowl shape. It is then later smoothened out, and given it's abstract shape using proportional editing.
-                  <br>            <br>
+          
 
 
             <img src="images 2/Blender 3.png" alt="The process of creating a simple bowl."> 
-                    <br>            <br>
+
 
 
             <img src="images 2/Blender 4.png" alt="The bowl in it's early stages."> 
- <br>            <br>
+
         </p>
         
-          <br> 
         
         <p>
         The fruits were a much harder task for me, I had to do some research on youtube in order to get an idea on how to create these shapes.
@@ -110,62 +107,57 @@ Last but not least we needed to create a 2D character sprite animation in <a hre
                
        
             <h3 class="Apple">Apple</h3>
-            <br> 
             <img src="images 2/Apple.png" alt="A 3D sculpt of an Apple, made in Blender."> 
               <p>   Create an Apple with Modifiers in Blender!     
         </p>
-                <br> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XGHF5rCrWCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <br> 
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/XGHF5rCrWCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
             
-            <br> 
+     
            
 
     
-    <h3 class="Pear">Pear</h3>
-            <br>         
+    <h3 class="Pear">Pear</h3>       
             <img src="images 2/Pear.png" alt="A 3D sculpt of a Pear, made in Blender.">
-               <br>   
+
     <p>   Blender: Modeling a Pear (Part 1)      
-        </p>
-                <br>  
+        </p>        
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/XJSlfM-dU64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
         
         
-            <br> 
+
 
                     
             <h3 class="Banana">Banana</h3>
-                <br>  
+       
             <img src="images 2/Banana.png" alt="A 3D sculpt of an Banana, made in Blender.">
-                 <br>
                       <p>  Learn Blender with me 3 - Create 3D banana - 151     
         </p>
-                <br>     
+       
         <iframe width="560" height="315" src="https://www.youtube.com/embed/i92LlUhP-Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     
-               <br> 
+    
 
        
             <h3 class="Orange">Orange</h3>
-                 <br> 
+         
             <img src="images 2/Orange.png" alt="A 3D sculpt of an orange, made in Blender.">
-                 <br> 
+   
               <p>  How to make an orange in Blender Cycles 2.72!  
         </p>
-                 <br>
+         
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/RXSnII_7hGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
-<br>             
+            
 
 
-        <p>
+
         
         Then it was time to animate the fruit bowl, a transparent globe is added around the fruit bowl. Then two lights are also added, cycles is used for realistic shading. Then using object relationships, the globe is made to rotate with the camera,
         eventually upon playing the keyframes are created and we got our final output.
-         </p>
+
         
                         <img src="images 2/Blender 1.png" alt="An image showing the final fruit bowl ready to be animated, with a camera, lights and a rotating globe.">
 
@@ -187,38 +179,38 @@ Last but not least we needed to create a 2D character sprite animation in <a hre
         <br>
         <br>
 <h5>Unity</h5>
-            <br>
+
         <p> 
             
             Creating the sprite sheet required use of Piskel and Unity animating software.
-            <br>
+
             
             Using the <em>sprite editor<em> in Unity, the sprite sheet was sliced into individual squares using the correct column and rows. Each of the squares are named in order such as Corsair_Jump_01, to be used in the animator.
-            <br>
+
             
             <img src="images 2/pixel 3.png" alt="Animating a pixel sprite sheet in the Unity Animator.">
-            <br>
+
             
             As you can see the sprite editor has created individual pieces from the sprite sheet, a <em>game object</em> is created and the sprite renderer is loaded.
             The individual pieces are also then connected together into animations such as Corsair_Idle, Corsair_Run and Corsair_Die. 
             
             
-            <br>
+
             <img src="images 2/pixel 1.png" alt="Animating a pixel sprite sheet in the Unity Animator.">
-            <br>
+ 
             
             To begin animating first the <em>animator</em> component is added in our game object, the <em>animator controller</em> is then loaded into the assets. Later the actual animator(<em>state machine</em>) is opened, this controls the behaviour of an object in a game.
             The animations are added into the state machine, each of the animations are connected together in a loop sequence.
             
-            <br>
-            <img src="images 2/pixel 4.png" alt="Animating a pixel sprite sheet in the Unity Animator.">
-            <br>
+    
+         <img src="images 2/pixel 4.png" alt="Animating a pixel sprite sheet in the Unity Animator.">
+
             
             The animations are then added and played in the <em> animation preview </em>, the samples are changed to lower ones for a smoother look. Later the animation is arranged as required in the preview, to be recorded and processed for the final output.
             
-            <br>
+
             <img src="images 2/pixel 2.png" alt="Animating a pixel sprite sheet in the Unity Animator.">
-            <br>
+
 
 
 
